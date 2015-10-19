@@ -3,7 +3,8 @@
 CHOICES = {'p' => 'paper', 'r' => 'rock', 's' => 'scissor'}
 
 def player_wins?(player, computer)
-  return true if (player == 'p' and computer == 'r')  || (player == 'r' and computer == 's') || (player == 's' and computer == 'p')
+  return true if (player == 'p' and computer == 'r')  || (player == 'r' and computer == 's') ||
+      (player == 's' and computer == 'p')
 end
 
 loop do

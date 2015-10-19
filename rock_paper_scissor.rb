@@ -3,8 +3,9 @@
 CHOICES = {'p' => 'paper', 'r' => 'rock', 's' => 'scissor'}
 
 def player_wins?(player, computer)
-  return true if (player == 'p' and computer == 'r')  || (player == 'r' and computer == 's') ||
-      (player == 's' and computer == 'p')
+  return true if (player == 'p' && computer == 'r')  ||
+      (player == 'r' && computer == 's') ||
+      (player == 's' && computer == 'p')
 end
 
 loop do
@@ -27,8 +28,7 @@ loop do
   puts "Play again? Type 'y' to play again"
   keep_playing = gets.chomp
 
-  if keep_playing.downcase != 'y'
-    break
-  end
+  break if keep_playing.downcase != 'y'
+
 
 end
